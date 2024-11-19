@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+body {
+    text-align: center;
+    background: linear-gradient(45deg, #bfcaed,#81a9ca,#a6bcf0);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 670px;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.input-container input {
+    padding: 0.8rem;
+    width: 70%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    margin-right: 1.5rem;
+}
+.input-container input::placeholder{
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.input-container button {
+    padding: 0.8rem;
+    background: linear-gradient(45deg, #5ca3dd,#a4bdf7);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input-container button:hover {
+    background: linear-gradient(45deg, #3974a3,#7ca0f5);
+}
+
+.weather-container {
+    margin: 1.5rem;
+}
+#weather-result h2{
+    color: #9cbad2;
+}
+#weather-result p{
+    margin: 0.8rem;
+}
+.forecast-container {
+    display: none;
+}
+
+.forecast-day {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 0.9rem;
+}
+
+.forecast-day:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    color: #9cbad2;
+    font-size: 1.8rem;
+    margin: 1.3rem ;
+}

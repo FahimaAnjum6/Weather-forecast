@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="cloudy.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="input-container">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button onclick="getWeather()">Get Weather</button>
+        </div>
+        <div id="weather-result" class="weather-container"></div>
+        <div class="forecast-container">
+            <h2>5-Day Forecast</h2>
+            <div id="forecast-result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
